@@ -23,9 +23,11 @@
     <ClInclude Include="aymara.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="EntryPoint.h" />
+    <ClInclude Include="Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -121,6 +123,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AYM_PLATFORM_WINDOWS; AYM_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)aymara\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +138,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AYM_PLATFORM_WINDOWS; AYM_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)aymara\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

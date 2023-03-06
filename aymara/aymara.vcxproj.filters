@@ -33,9 +33,15 @@
     <ClInclude Include="EntryPoint.h">
       <Filter>src\aymara</Filter>
     </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>src\aymara</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
+      <Filter>src\aymara</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
       <Filter>src\aymara</Filter>
     </ClCompile>
   </ItemGroup>

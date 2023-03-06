@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AYM_PLATFORM_WINDOWS; AYM_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)aymara</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)aymara; $(SolutionDir)aymara\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +127,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AYM_PLATFORM_WINDOWS; AYM_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)aymara</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)aymara; $(SolutionDir)aymara\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
