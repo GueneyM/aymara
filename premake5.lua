@@ -1,4 +1,5 @@
 workspace "aymara"
+	startproject "Sandbox"
 	architecture "x64"
 
 	configurations
@@ -20,13 +21,13 @@ project "aymara"
 
 files 
 {
-	"%{prj.name}/src/**.h",
-	"%{prj.name}/src/**.cpp"
+	"%{prj.name}/**.h",
+	"%{prj.name}/**.cpp"
 }
 
 includedirs
 {
-	"%{prj.name}/vendor/spdlog/include"
+	"%{prj.name}/vendor/spdlog/include/"
 }
 
 filter "system:windows"
@@ -36,8 +37,9 @@ filter "system:windows"
 
 	defines
 	{
-		AYM_PLATFORM_WINDOWS, 
-		AYM_BUILD_DLL,
+		"AYM_PLATFORM_WINDOWS", 
+		"AYM_BUILD_DLL",
+		"SPDLOG_COMPILED_LIB"
 	}
 
 	postbuildcommands
@@ -69,14 +71,14 @@ project "Sandbox"
 
 files 
 {
-	"%{prj.name}/src/**.h",
-	"%{prj.name}/src/**.cpp"
+	"%{prj.name}/**.h",
+	"%{prj.name}/**.cpp"
 }
 
 includedirs
 {
-	"%{prj.name}/vendor/spdlog/include",
-	"aymara/src"
+	"aymara/vendor/spdlog/include",
+	"aymara"
 }
 
 links
@@ -91,7 +93,7 @@ filter "system:windows"
 
 	defines
 	{
-		AYM_PLATFORM_WINDOWS, 
+		"AYM_PLATFORM_WINDOWS", 
 	}
 
 filter "configurations:Debug"
