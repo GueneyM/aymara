@@ -1,6 +1,6 @@
 #pragma once
 
-#include "aymara/Events/Event.h"
+#include "Event.h"
 
 namespace aymara {
 

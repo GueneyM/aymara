@@ -1,6 +1,6 @@
 #pragma once
 
-#include "aymara/Core.h"
+#include "Core.h"
 
 #include <string>
 #include <functional>

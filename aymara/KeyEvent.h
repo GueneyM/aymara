@@ -1,26 +1,26 @@
 #pragma once
 
-#include "aymara/Events/Event.h"
+#include "Event.h"
 
 namespace aymara {
 
-	class KeyEvent : public Event
+	class AYMARA_API KeyEvent : public Event
 	{
 	public:
-		KeyCode GetKeyCode() const { return m_KeyCode; }
+		inline int GetKeyCode() const { return m_KeyCode; }
 
 		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 	protected:
-		KeyEvent(const KeyCode keycode)
+		KeyEvent(int keycode)
 			: m_KeyCode(keycode) {}
 
-		KeyCode m_KeyCode;
+		int m_KeyCode;
 	};
 
 	class KeyPressedEvent : public KeyEvent
 	{
 	public:
-		KeyPressedEvent(const KeyCode keycode, bool isRepeat = false)
+		KeyPressedEvent(const int keycode, bool isRepeat = false)
 			: KeyEvent(keycode), m_IsRepeat(isRepeat) {}
 
 		bool IsRepeat() const { return m_IsRepeat; }
@@ -40,7 +40,7 @@ namespace aymara {
 	class KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyReleasedEvent(const KeyCode keycode)
+		KeyReleasedEvent(const int keycode)
 			: KeyEvent(keycode) {}
 
 		std::string ToString() const override
@@ -56,7 +56,7 @@ namespace aymara {
 	class KeyTypedEvent : public KeyEvent
 	{
 	public:
-		KeyTypedEvent(const KeyCode keycode)
+		KeyTypedEvent(const int keycode)
 			: KeyEvent(keycode) {}
 
 		std::string ToString() const override

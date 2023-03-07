@@ -1,7 +1,7 @@
 #include "Application.h"
 
-#include "aymara/Events/ApplicationEvent.h"
-#include "aymara/Log.h"
+#include "ApplicationEvent.h"
+#include "Log.h"
 
 namespace aymara {
 
