@@ -7,9 +7,6 @@
     <Filter Include="vendor\spdlog">
       <UniqueIdentifier>{8BBC5F22-F77C-DB58-C0B7-24D62C372035}</UniqueIdentifier>
     </Filter>
-    <Filter Include="vendor\spdlog\bench">
-      <UniqueIdentifier>{1AD3E432-8634-C240-0FA2-08F37B02F9FF}</UniqueIdentifier>
-    </Filter>
     <Filter Include="vendor\spdlog\example">
       <UniqueIdentifier>{6629C191-D295-7C8C-9B89-14EA07B59EF4}</UniqueIdentifier>
     </Filter>
@@ -37,22 +34,20 @@
     <Filter Include="vendor\spdlog\src">
       <UniqueIdentifier>{22C8CC8D-8EDE-CA23-D755-564543AB9BAB}</UniqueIdentifier>
     </Filter>
-    <Filter Include="vendor\spdlog\tests">
-      <UniqueIdentifier>{ADA32A34-1905-0842-A272-4EF40ED33E01}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Events">
-      <UniqueIdentifier>{5695656f-1dcc-433a-8c86-84e9cbe6bbd2}</UniqueIdentifier>
+    <Filter Include="vendor\spdlog\bench">
+      <UniqueIdentifier>{503e616d-be1c-42f2-a3e4-c2c375af6d43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="ApplicationEvent.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="EntryPoint.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="KeyEvent.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="MouseEvent.h" />
     <ClInclude Include="aymara.h" />
-    <ClInclude Include="vendor\spdlog\bench\utils.h">
-      <Filter>vendor\spdlog\bench</Filter>
-    </ClInclude>
     <ClInclude Include="vendor\spdlog\include\spdlog\async.h">
       <Filter>vendor\spdlog\include\spdlog</Filter>
     </ClInclude>
@@ -362,43 +357,13 @@
     <ClInclude Include="vendor\spdlog\include\spdlog\version.h">
       <Filter>vendor\spdlog\include\spdlog</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\spdlog\tests\includes.h">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\spdlog\tests\test_sink.h">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\spdlog\tests\utils.h">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Events</Filter>
-    </ClInclude>
-    <ClInclude Include="ApplicationEvent.h">
-      <Filter>Events</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>Events</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>Events</Filter>
+    <ClInclude Include="vendor\spdlog\bench\utils.h">
+      <Filter>vendor\spdlog\bench</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Log.cpp" />
-    <ClCompile Include="vendor\spdlog\bench\async_bench.cpp">
-      <Filter>vendor\spdlog\bench</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\bench\bench.cpp">
-      <Filter>vendor\spdlog\bench</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\bench\formatter-bench.cpp">
-      <Filter>vendor\spdlog\bench</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\bench\latency.cpp">
-      <Filter>vendor\spdlog\bench</Filter>
-    </ClCompile>
     <ClCompile Include="vendor\spdlog\example\example.cpp">
       <Filter>vendor\spdlog\example</Filter>
     </ClCompile>
@@ -423,74 +388,10 @@
     <ClCompile Include="vendor\spdlog\src\stdout_sinks.cpp">
       <Filter>vendor\spdlog\src</Filter>
     </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\main.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_async.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_backtrace.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_cfg.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_create_dir.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_custom_callbacks.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_daily_logger.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_dup_filter.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_errors.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_eventlog.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_file_helper.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_file_logging.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_fmt_helper.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_macros.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_misc.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_mpmc_q.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_pattern_formatter.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_registry.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_stdout_api.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_stopwatch.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_systemd.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\test_time_point.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="vendor\spdlog\tests\utils.cpp">
-      <Filter>vendor\spdlog\tests</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vendor\spdlog\bench\CMakeLists.txt">
+      <Filter>vendor\spdlog\bench</Filter>
+    </Text>
   </ItemGroup>
 </Project>

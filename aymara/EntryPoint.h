@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
 	aymara::Log::Init();
 	AYM_CORE_WARN("Initialized Log!");
-	AYM_CORE_INFO("Hello!");
+	AYM_CORE_INFO("Hello Aymara!");
 
 	auto app = aymara::CreateApplication();
 	app->Run();

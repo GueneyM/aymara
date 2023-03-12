@@ -142,8 +142,8 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="KeyEvent.h" />
     <ClInclude Include="Log.h" />
-    <ClInclude Include="aymara.h" />
     <ClInclude Include="MouseEvent.h" />
+    <ClInclude Include="aymara.h" />
     <ClInclude Include="vendor\spdlog\bench\utils.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\async.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\async_logger-inl.h" />
@@ -248,17 +248,10 @@
     <ClInclude Include="vendor\spdlog\include\spdlog\stopwatch.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\tweakme.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\version.h" />
-    <ClInclude Include="vendor\spdlog\tests\includes.h" />
-    <ClInclude Include="vendor\spdlog\tests\test_sink.h" />
-    <ClInclude Include="vendor\spdlog\tests\utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Log.cpp" />
-    <ClCompile Include="vendor\spdlog\bench\async_bench.cpp" />
-    <ClCompile Include="vendor\spdlog\bench\bench.cpp" />
-    <ClCompile Include="vendor\spdlog\bench\formatter-bench.cpp" />
-    <ClCompile Include="vendor\spdlog\bench\latency.cpp" />
     <ClCompile Include="vendor\spdlog\example\example.cpp" />
     <ClCompile Include="vendor\spdlog\src\async.cpp" />
     <ClCompile Include="vendor\spdlog\src\bundled_fmtlib_format.cpp" />
@@ -267,29 +260,9 @@
     <ClCompile Include="vendor\spdlog\src\file_sinks.cpp" />
     <ClCompile Include="vendor\spdlog\src\spdlog.cpp" />
     <ClCompile Include="vendor\spdlog\src\stdout_sinks.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\main.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_async.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_backtrace.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_cfg.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_create_dir.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_custom_callbacks.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_daily_logger.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_dup_filter.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_errors.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_eventlog.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_file_helper.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_file_logging.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_fmt_helper.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_macros.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_misc.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_mpmc_q.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_pattern_formatter.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_registry.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_stdout_api.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_stopwatch.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_systemd.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\test_time_point.cpp" />
-    <ClCompile Include="vendor\spdlog\tests\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vendor\spdlog\bench\CMakeLists.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
