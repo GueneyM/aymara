@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\aymara">
+      <UniqueIdentifier>{F7484D50-E300-8F9D-4C08-68F938DF298E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\aymara\Events">
+      <UniqueIdentifier>{FB58869A-676F-8430-B0E6-0F521C3C55B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\spdlog">
+      <UniqueIdentifier>{8BBC5F22-F77C-DB58-C0B7-24D62C372035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\spdlog\src">
+      <UniqueIdentifier>{22C8CC8D-8EDE-CA23-D755-564543AB9BAB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aymara.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Application.h">
+      <Filter>src\aymara</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Core.h">
+      <Filter>src\aymara</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\EntryPoint.h">
+      <Filter>src\aymara</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Events\ApplicationEvent.h">
+      <Filter>src\aymara\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Events\Event.h">
+      <Filter>src\aymara\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Events\KeyEvent.h">
+      <Filter>src\aymara\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Events\MouseEvent.h">
+      <Filter>src\aymara\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aymara\Log.h">
+      <Filter>src\aymara</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aymara\Application.cpp">
+      <Filter>src\aymara</Filter>
+    </ClCompile>
+    <ClCompile Include="src\aymara\Log.cpp">
+      <Filter>src\aymara</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\async.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\bundled_fmtlib_format.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\cfg.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\color_sinks.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\file_sinks.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\spdlog.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\spdlog\src\stdout_sinks.cpp">
+      <Filter>vendor\spdlog\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
